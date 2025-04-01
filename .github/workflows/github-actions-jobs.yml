@@ -1,0 +1,16 @@
+name: GitHub Actions Jobs
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    steps:
+    - uses: actions/checkout@v3
+    - name: do_additional_things
+      run: |
+        echo "Running GitHub Actions build job 1"
+        ./build_script.sh
