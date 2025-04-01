@@ -1,4 +1,7 @@
 
+default:
+  image: nbrei/jana2_env_everything_except_cuda
+
 build-job-1:
   stage: build
   script:
